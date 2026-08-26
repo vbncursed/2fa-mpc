@@ -11,7 +11,7 @@ services:
       - mpc-pg-data:/var/lib/postgresql/data
 
   mpc-kafka:
-    image: bitnami/kafka:4.1
+    image: soldevelo/kafka:4.1
     environment:
       KAFKA_CFG_NODE_ID: 1
       KAFKA_CFG_PROCESS_ROLES: broker,controller
